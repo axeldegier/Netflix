@@ -1,0 +1,16 @@
+.myclass{
+    width: 300px;
+    height: 300px;
+    background-color: hotpink;
+}
+.App-content {
+    width: 100%;
+    height: 100%;
+    background: black;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    color: white;
+}
