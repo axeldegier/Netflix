@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from './logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMars, faVenus} from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
     return (
         <nav className="nav-wrapper red darken-3">
             <div className="container">
-                <a className="brand-logo left" href="#"><img src={Logo} alt="halloe" /></a>
+                <NavLink className="brand-logo left" to="/"><img src={Logo} alt="halloe" width="80%" height="80%" /><FontAwesomeIcon icon={faVenus} /></NavLink>
                 <ul className="right">
                     <li><a href="/">Home</a></li>
                     <li><NavLink to="/series">Series</NavLink></li>

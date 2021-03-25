@@ -2,6 +2,8 @@
 import React from 'react';
 import '../css/App.css';
 import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css'
+import 'materialize-css';
 import { BrowserRouter, Route} from 'react-router-dom';
 import NavBar from './navigation/NavBar.jsx';
 import Home from './navigation/Home.jsx';
@@ -27,6 +29,11 @@ import MyList from './navigation/MyList.jsx';
 
 
 class App extends React.Component {
+  componentDidMount() {
+    let sidenav = document.querySelector('#slide-out');
+    M.Sidenav.init(sidenav, {});
+  }
+  
   render() {
       return (
         <BrowserRouter>
